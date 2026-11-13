@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GURU RESTAURANT - Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h2>GURU RESTAURANT</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h1>OUR FOOD MENU</h1>
+    <p>Select your favourite food and add it to your cart.</p>
+
+    <div class="food-container">
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?w=500" alt="Chicken Biryani">
+            <h3>Chicken Biryani</h3>
+            <p>₹220</p>
+            <button onclick="addToCart('Chicken Biryani',220)">Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500" alt="South Indian Meals">
+            <h3>South Indian Meals</h3>
+            <p>₹130</p>
+            <button onclick="addToCart('South Indian Meals',130)">Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500" alt="Veg Fried Rice">
+            <h3>Veg Fried Rice</h3>
+            <p>₹150</p>
+            <button onclick="addToCart('Veg Fried Rice',150)">Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500" alt="Chicken Curry">
+            <h3>Chicken Curry</h3>
+            <p>₹180</p>
+            <button onclick="addToCart('Chicken Curry',180)">Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=500" alt="Masala Dosa">
+            <h3>Masala Dosa</h3>
+            <p>₹80</p>
+            <button onclick="addToCart('Masala Dosa',80)">Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd4?w=500" alt="Fresh Juice">
+            <h3>Fresh Juice</h3>
+            <p>₹60</p>
+            <button onclick="addToCart('Fresh Juice',60)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="content cart-section">
+
+    <h1>🛒 MY CART</h1>
+
+    <div id="cart-items">
+        Your cart is empty.
+    </div>
+
+    <h2>Total Amount: ₹<span id="total">0</span></h2>
+
+    <h2>Customer Details</h2>
+
+    <form id="order-form">
+
+        <input type="text" id="customer-name"
+        placeholder="Enter Your Name" required>
+
+        <input type="tel" id="customer-phone"
+        placeholder="Enter 10 Digit Phone Number"
+        pattern="[0-9]{10}" maxlength="10" required>
+
+        <textarea id="customer-address"
+        placeholder="Enter Delivery Address" required></textarea>
+
+        <button type="submit" id="order-button">
+            PLACE ORDER ON WHATSAPP
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 GURU RESTAURANT. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
